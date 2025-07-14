@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Popular Categories</title>
+  <title>راه‌های ارتباطی</title>
+
+  <!-- شماره ۲: فونت فارسی زیبای Vazirmatn -->
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn-font/dist/font-face.css" rel="stylesheet">
+
   <style>
+    /* شماره ۱: پس‌زمینه گرادینت جذاب */
     body {
-      font-family: Arial, sans-serif;
+      font-family: Vazirmatn, sans-serif;
       margin: 0;
       padding: 0;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      background-color: #f4f4f4;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #e0f7fa, #ffffff);
     }
 
     .container {
@@ -27,24 +33,27 @@
       height: auto;
       margin: 0 auto 20px auto;
       display: block;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
     .heading {
       font-size: 24px;
       margin-bottom: 20px;
       font-weight: bold;
+      color: #333;
     }
 
     .categories {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
       gap: 20px;
     }
 
     .category {
       background-color: #fff;
       padding: 20px;
-      border-radius: 8px;
+      border-radius: 16px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       text-align: center;
       transition: transform 0.2s;
@@ -69,11 +78,23 @@
     a {
       text-decoration: none;
     }
+
+    /* شماره ۸: فوتر با برند */
+    footer {
+      margin-top: 40px;
+      padding: 12px 0;
+      text-align: center;
+      font-size: 13px;
+      color: #555;
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(10px);
+      width: 100%;
+      border-top: 1px solid #ddd;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- لوگو در بالا -->
     <img src="IMG_20250715_003141_930-removebg-preview.png" alt="Logo" class="logo">
 
     <div class="heading">راه های ارتباطی با هیات نجات غریق استان سیستان و بلوچستان</div>
@@ -81,29 +102,34 @@
     <div class="categories">
       <a href="https://t.me/yourchannel" target="_blank" class="category">
         <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" />
-        <p>Telegram</p>
+        <p>تلگرام</p>
       </a>
 
       <a href="https://www.instagram.com/yourpage" target="_blank" class="category">
         <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
-        <p>Instagram</p>
+        <p>اینستاگرام</p>
       </a>
 
       <a href="https://wa.me/yourwhatsapplink" target="_blank" class="category">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
-        <p>WhatsApp</p>
+        <p>واتساپ</p>
       </a>
 
       <a href="mailto:example@email.com" target="_blank" class="category">
         <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.svg" alt="Email" />
-        <p>Email</p>
+        <p>ایمیل</p>
       </a>
 
       <a href="https://yourwebsite.com" target="_blank" class="category">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Icon_Website.png" alt="Website" />
-        <p>Website</p>
+        <p>وب‌سایت</p>
       </a>
     </div>
   </div>
+
+  <!-- شماره ۸: نوار پایین با برند -->
+  <footer>
+    طراحی‌شده توسط هیات نجات غریق استان سیستان و بلوچستان
+  </footer>
 </body>
 </html>
